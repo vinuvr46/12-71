@@ -1,0 +1,147 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel, .right-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.left-panel {
+    background-color: #f2f2f2;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.text-overlay h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.text-overlay p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.right-panel {
+    background-color: #ffffff;
+}
+
+.login-box {
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.login-box h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.login-box p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box label {
+    text-align: left;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.login-box input {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.login-box button {
+    padding: 0.75em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.login-box .forgot-password {
+    margin-top: 0.5em;
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.social-login {
+    margin: 2em 0;
+}
+
+.social-login p {
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.social-login button {
+    margin: 0.5em;
+    padding: 0.75em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.social-login .google {
+    background-color: #db4437;
+    color: white;
+}
+
+.social-login .facebook {
+    background-color: #4267B2;
+    color: white;
+}
+
+.social-login .apple {
+    background-color: #000000;
+    color: white;
+}
+
+.register {
+    margin-top: 1em;
+}
+
+.register a {
+    color: #007bff;
+    text-decoration: none;
+}
